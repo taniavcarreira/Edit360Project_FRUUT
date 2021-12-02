@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header> 
+        <!--PRE-HEADER-->
+        <div class="pre-header">
+            <div class="row">
+                <div class="col-a">
+                    <img src="imgs/icons/globe.svg">
+                    <span>Portes grátis</span>
+                </div>   
+                <div class="col-a"> 
+                    <img src="imgs/icons/security.svg">
+                    <span>Pagamento seguro</span>
+                </div>   
+            </div>
+        </div>
+        <!--HEADER-->
+        <div class="menu">
+            <div class="row">
+                <div class="col-a navbar">
+                    <a href="index.html" class="logo">
+                        <img src="imgs/logo.svg" alt="Fruut, the friendly snack">
+                    </a>
+                    <!--NAV-->
+                    <nav id="navbar">
+                        <ul class="list">
+                            <li><a href="https://fruut.pt/familia-fruut/" target="blank">Família Fruut</a></li>
+                            <li><a href="https://fruut.pt/" target="blank">Fruut Box</a></li>      
+                            <li><a href="manifesto.html">Manifesto</a></li>
+                            <li><a href="sobre_nos.html" class="active">Sobre</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="https://fruut.pt/contacto/" target="blank">Contacto</a></li>
+                            <li><a href="#">PT</a><a href="#">EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--ICON RIGHT-->
+                <div class="icons col-a">
+                    <a href="#" class="flagmobile">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/minha-conta/" target="blank" class="login">
+                        <img src="imgs/icons/account.svg" alt="Fruut:a minha conta" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/carrinho/" target="blank" class="cart">
+                        <img src="imgs/icons/cart.svg" alt="Fruut:carrinho" class="imgfit">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <label for="main-menu-check" onclick="openMenu()">
+                        <div id="bars">
+                            <div id="bars-a"></div>
+                            <div id="bars-b"></div>
+                            <div id="bars-c"></div>
+                        </div>
+                    </label>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <main id="pontos">
+        <!-- HEADER-->
+        <section id="hero-section" class="row">
+            <div class="col-12 col-d-5">
+                <h1 class="h1 title is-primary">Pontos Fruut</h1>
+                <h2 class="subtitle">Ganha pontos com pequenos gestos</h2>
+                <p class="text">Na Fruut queremos contribuir para um futuro melhor. 
+                    Para todos. Sabemos que sem ti será impossível e por isso queremos 
+                    recompensar-te pelo teu empenho e pela tua preferência pelos nossos snacks.</p>
+            </div>
+            <div class="col-12 offset-d-1 col-d-6">
+                <figure class="img">
+                    <img src="imgs/pontos/pontos-fruut.png" class="imgfit" alt="Ganha pontos com pequenos gestos">
+                </figure>
+            </div>
+        </section>
+        <section class="section2 rowfull has-greybg">
+            <div class="row">
+                <div class="left col-12 col-d-5">
+                    <h2 class="is-primary title">Como acumular pontos</h2>
+                    <p class="text">Podes ganhar pontos com simples acções: 
+                        no teu registo, nas compras que fazes connosco e 
+                        nas tuas interacções com a Fruut.</p>
+                    <p class="obs desktop">
+                        Não nos esquecemos de quem já fazia parte da nossa 
+                        comunidade Fruut. Se fazes parte desse grupo e ainda 
+                        não recebeste os teus pontos na tua área pessoal clica <a href="#" class="is-black">aqui</a></p>
+                    <img src="imgs/pontos/appleBox.png" class="imgfit" alt="Como acumular pontos Fruut">
+                </div>
+                <div class="right col-12 offset-d-1 col-d-5">
+                    <h3 class="subtitle">Registo na nossa comunidade</h3>
+                    <ul class="listpoint">
+                        <li><strong>100 pontos</strong> ao criares a tua conta</li>
+                        <li><strong>50 pontos</strong> por cada ano de conta</li>
+                        <li><strong>25 pontos</strong> ao assinares a nossa newsletter (+ 5 pontos por cada mês em que a mantenhas activa)</li>
+                        <li><strong>15 pontos</strong> ao associares a tua conta do Facebook</li>
+                        <li><strong>15 pontos</strong> ao associares o teu perfil do Instagram</li>
+                    </ul>
+                    <h3 class="subtitle">Ao comprares os nossos snacks</h3>
+                    <ul class="listpoint">
+                        <li><strong>30 pontos</strong> na compra de uma fruut box</li>
+                        <li><strong>200 pontos</strong> na subscrição de 6 meses</li>
+                        <li><strong>500 pontos</strong> na subscrição de 12 meses</li>
+                        <li><strong>300 pontos</strong> por cada 12 caixas subscritas isoladamente</li>
+                        <li><strong>500 pontos</strong> a cada 50 caixas subscritas</li>
+                    </ul>
+                    <h3 class="subtitle">Interacções com a Fruut nas redes sociais</h3>
+                    <ul class="listpoint">
+                        <li><strong>20 pontos</strong> se partilhares as nossas receitas e identificares a Fruut</li>
+                        <li><strong>5 pontos</strong> pelo 1º comentário aos nossos artigos</li>
+                        <li><strong>15 pontos</strong> pela partilha no Instagram dos nossos snacks, identificado a Fruut</li>
+                        <li><strong>25 pontos</strong> se convidares as tuas amigas e amigos a seguirem-nos</li>
+                        <li><strong>100 pontos</strong> se fores o vencedor de um dos nossos giveaways (se tiveres registo na nossa comunidade Fruut)</li>
+                    </ul>
+                    <p class="obs mobile">
+                        Não nos esquecemos de quem já fazia parte da nossa 
+                        comunidade Fruut. Se fazes parte desse grupo e ainda 
+                        não recebeste os teus pontos na tua área pessoal clica <a href="#" class="is-black">aqui</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="section3 rowfull marginbottom_72">
+            <div class="row info">
+                <div class="col-12 col-d-6">
+                    <h2 class="is-primary textcenter title">Poderás trocar os teus pontos...</h2>
+                    <p class="text textcenter">
+                        Os pontos que acumulas podem ser trocados por 
+                        snacks Fruut ou por objectos que tornem o teu dia 
+                        a dia mais sustentável
+                    </p>
+                </div>
+            </div>
+            <div class="row products">
+                <div class="col-12">
+                    <h3 class="is-primary title">Snacks Fruut</h3>
+                </div>
+                <div class="col-12 mobile">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="https://fruut.pt/produto/fruut-coco/" class="content" target="blank">
+                                        <img src="imgs/index/tabs/fruut-category/fruutcoco.png" loading="lazy" class="imgfit" alt="Fruut Coco desidratada">
+                                    </a> 
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="https://fruut.pt/produto/fruut-abacaxi/" class="content" target="blank">
+                                        <img src="imgs/index/tabs/fruut-category/fruutabacaxi.png" loading="lazy" class="imgfit" alt="Fruut Abacaxi desidratada">
+                                    </a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="https://fruut.pt/produto/fruut-maca-com-canela/" class="content" target="blank">
+                                        <img src="imgs/index/tabs/fruut-category/fruutmacacanela.png" loading="lazy" class="imgfit" alt="Fruut Maçã desidratada e canela">
+                                    </a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="https://fruut.pt/produto/fruut-kids/" class="content maca" target="blank">
+                                        <img src="imgs/index/tabs/fruut-category/fruutkids.png" loading="lazy" class="imgfit" alt="Fruut Kids Maçã desidratada">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                    <img src="imgs/icons/arrowblack.svg" alt="snack fruut anterior">
+                                </button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                    <img src="imgs/icons/arrowblack.svg" alt="snack fruut seguinte" style="width: ;transform: rotate(180deg)">
+                                </button>
+                            </div>
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/index/tabs/fruut-category/fruutcoco.png" alt="Fruut coco desidratado" class="imgfit">
+                </figure>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/index/tabs/fruut-category/fruutabacaxi.png" alt="Fruut abacaxi desidratado"class="imgfit">
+                </figure>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/index/tabs/fruut-category/fruutmacacanela.png" alt="Fruut maçã canela desidratado" class="imgfit">
+                </figure>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/index/tabs/fruut-category/fruutkids.png" alt="Fruut kids maçã desidratado" class="imgfit">
+                </figure>
+            </div>
+            <div class="row products">
+                <div class="col-12">
+                    <h3 class="is-primary title">Produtos para o teu dia&#8209;a&#8209;dia</h3>
+                </div>
+                <div class="col-12 mobile">
+                    <div class="row">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="#" class="content" target="blank">
+                                            <img src="imgs/pontos/premio1.png" loading="lazy" class="imgfit" alt="Fruut prémios úteis amigos do ambiente">
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="content" target="blank">
+                                            <img src="imgs/pontos/premio2.png" loading="lazy" class="imgfit" alt="Fruut prémios úteis amigos do ambiente">
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="content" target="blank">
+                                            <img src="imgs/pontos/premio3.png" loading="lazy" class="imgfit" alt="Fruut prémios úteis amigos do ambiente">
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="#" class="content maca" target="blank">
+                                            <img src="imgs/pontos/premio4.png" loading="lazy" class="imgfit" alt="Fruut prémios úteis amigos do ambiente">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut anterior">
+                                    </button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut seguinte" style="width: ;transform: rotate(180deg)">
+                                    </button>
+                                </div>
+                                <div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/pontos/premio1.png" alt="Fruut coco desidratado" class="imgfit">
+                </figure>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/pontos/premio2.png" alt="Fruut coco desidratado" class="imgfit">
+                </figure>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/pontos/premio3.png" alt="Fruut coco desidratado" class="imgfit">
+                </figure>
+                <figure class="col-d-3 desktop">
+                    <img src="imgs/pontos/premio4.png" alt="Fruut coco desidratado" class="imgfit">
+                </figure>
+                <div class="col-12 desktop">
+                    <p class="more textcenter">E muito mais...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer-Top -->
+        <div class="footer row nogutter ">
+            <a href="/index.html" class="col-a">
+                <img src="imgs/logo.svg" alt="Fruut the friendly snack" class="logo">
+            </a>
+            <div class="col-a">
+                <ul class="rowfull footer-list">
+                    <li class="col-a">
+                        <a href="https://fruut.pt/box-de-subscricao/" class="h6">Fruut Box</a>
+                        <a href="/sobre_nos.html" class="h6">Sobre a Fruut®</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="/blog.html" class="h6">Blog</a>
+                        <a href="https://fruut.pt/contacto/" class="h6">Contactos</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/faq/" class="h6">FAQ</a>
+                        <a href="https://fruut.pt/politica-privacidade/" class="h6">Política de Privacidade</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/termos-e-condicoes/" class="h6">Termos e Condições</a>
+                        <a href="https://www.livroreclamacoes.pt/entrar" class="h6">Livro de Reclamações Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col social-media">
+                <figure class="social">
+                    <img src="imgs/icons/facebook.svg" alt="Facebook Fruut" class="facebook imgfit">
+                    <img src="imgs/icons/instagram.svg" alt="Instagram Fruut" class="instagram imgfit">
+                    <img src="imgs/icons/youtube.svg" alt="Youtube Fruut" class="youtube imgfit">
+                </figure>
+            </div>
+        </div>
+        <!-- Footer-bottom -->
+        <div class="adress-footer">
+            <div class="row nogutter">
+                <div class="col-a">
+                    <p class="is-medium">Fala Connosco: 
+                    <span class="h6">+351 226 155 189&ensp;|&ensp;+351 961 493 092&ensp;|&ensp;frueat@frueat.pt&ensp;&ensp;</span></p>
+                </div>
+                <div class="col-a copywrite">
+                    <p class="is-medium">made with heart by: 
+                    <span class="h6">weboost.pt</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/index.js"></script>
+    <script> 
+        const sliders = document.querySelectorAll('.glide');
+        for (let i = 0; i < sliders.length; i++) {
+        const glide = new Glide(sliders[i], {
+            gap: 40,
+            type: 'carousel',
+            perView: 2,
+            breakpoints: {
+                375: {
+                    perView: 1
+                }
+            }
+        });
+        glide.mount();
+        }
+    </script>
+</body>
+</html>

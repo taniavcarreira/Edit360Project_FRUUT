@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css2?family=#{$bodyfont}:wght@#{$bodyfontweights}&display=swap);
+
+html{
+    box-sizing: border-box;
+    font-family: $bodyfontfamily, sans-serif;
+    color: $black;
+    background-color: $white;
+    font-weight: 400;
+    line-height: 1.5; // the golden ratio, baby!
+    // Setting base font-size for different breakpoints to then use REM everywhere:
+    font-size: $basefontsizemobile;
+    @media(min-width: $tablet){
+      font-size: $basefontsizetablet;
+    }
+    @media(min-width: $desktop){
+      font-size: $basefontsizedesktop;
+    }
+}
+
+/* ===================== */
+/* ======= LINKS ======= */
+/* ===================== */
+a{
+  @extend .animate;
+  color: $primary;
+}
+
+/* ======================== */
+/* ======= HEADINGS ======= */
+/* ======================== */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+  font-family: $bodyfontfamily, sans-serif;
+  margin: 0;
+  color: $black;
+  font-weight: $bold;
+  line-height: 1.5;
+  &.light, &.small{
+    font-weight: $normal;
+  }
+}
+
+h1, .h1{
+    font-size: 36px;
+}
+h2, .h2{
+    font-size: 32px;
+}
+h3, .h3{
+    font-size: 27px;
+}
+h4, .h4{
+    font-size: 23px;
+}
+h5, .h5{
+    font-size: 16px;
+}
+h6, .h6{
+    font-size: 1em;
+    font-weight: $bolder;
+}
+p, span, legend {
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+}
+a, a.btn{
+  text-decoration:none;
+}
+
+.btn{
+  font-size:0,875rem;
+  color:$primary;
+}

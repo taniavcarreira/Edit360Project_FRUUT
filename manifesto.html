@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header> 
+        <!--PRE-HEADER-->
+        <div class="pre-header">
+            <div class="row">
+                <div class="col-a">
+                    <img src="imgs/icons/globe.svg">
+                    <span>Portes grátis</span>
+                </div>   
+                <div class="col-a"> 
+                    <img src="imgs/icons/security.svg">
+                    <span>Pagamento seguro</span>
+                </div>   
+            </div>
+        </div>
+        <!--HEADER-->
+        <div class="menu">
+            <div class="row">
+                <div class="col-a navbar">
+                    <a href="index.html" class="logo">
+                        <img src="imgs/logo.svg" alt="Fruut, the friendly snack">
+                    </a>
+                    <!--NAV-->
+                    <nav id="navbar">
+                        <ul class="list">
+                            <li><a href="https://fruut.pt/familia-fruut/" target="blank">Família Fruut</a></li>
+                            <li><a href="https://fruut.pt/" target="blank">Fruut Box</a></li>      
+                            <li><a href="manifesto.html">Manifesto</a></li>
+                            <li><a href="sobre_nos.html" class="active">Sobre</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="https://fruut.pt/contacto/" target="blank">Contacto</a></li>
+                            <li><a href="#">PT</a><a href="#">EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--ICON RIGHT-->
+                <div class="icons col-a">
+                    <a href="#" class="flagmobile">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/minha-conta/" target="blank" class="login">
+                        <img src="imgs/icons/account.svg" alt="Fruut:a minha conta" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/carrinho/" target="blank" class="cart">
+                        <img src="imgs/icons/cart.svg" alt="Fruut:carrinho" class="imgfit">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <label for="main-menu-check" onclick="openMenu()">
+                        <div id="bars">
+                            <div id="bars-a"></div>
+                            <div id="bars-b"></div>
+                            <div id="bars-c"></div>
+                        </div>
+                    </label>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <main id="manifesto">
+        <!-- VIDEO-->
+        <section id="hero-video" class="hero-section row">
+            <div class="col-12 col-t-12 col-d-12">
+                <div class="box">
+                    <figure class="video-bg"></figure>
+                    <video autoloop controls loop id="video-manifesto" poster="imgs/manifesto/manifesto.png" class="hidden">
+                        <source src="videos/manifesto_fruut.mp4" type="video/mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption">
+                        <p>1/3 da comida a nível mundial</p>
+                        <p>é desperdiçada</p>
+                    </div>
+                    <button id="videoPlay" class="" onclick="playVid()">
+                        <img src="imgs/icons/play.svg" alt="Ver vídeo manifesto Fruut">
+                    </button>
+                </div>
+            </div>
+        </section>   
+        <section class="section row">
+            <!-- Manifesto-->
+            <div class="col-12 col-t-6 offset-d-1 col-d-4">
+                <div class="manifesto">
+                    <h1 class="is-primary">MANIFESTO</h1>
+                    <p> Cuidar bem do planeta é um dever de todos nós.</p>
+                    <p> Na Fruut assumimos o compromisso de lutar por 
+                        uma sociedade mais justa e sustentável. Sabemos 
+                        que os recursos do planeta são finitos, mas a 
+                        nossa vontade de aprender e melhorar todos os 
+                        dias não se esgota. </p>
+                    <p> Queremos reaproveitar, renovar, reutilizar, usar 
+                        aquilo que outros consideram que não tem qualidade 
+                        e mostrar que conseguimos evoluir enquanto empresa 
+                        e enquanto pessoas, de uma forma que respeite e 
+                        eleve a casa que é de todos nós. </p>
+                    <p> É por isso que a Fruut tenta, diariamente, lutar 
+                        contra o desperdício, seja na matéria-prima 
+                        ou em qualquer dos produtos que usamos, 
+                        criteriosamente, de forma a minimizar o impacto 
+                        ambiental e a reduzir a pegada ecológica. </p>
+                    <p> Queremos ainda ser uma força impulsionadora 
+                        da economia nacional, e é por isso que compramos 
+                        uma grande parte da nossa fruta a produtores locais, 
+                        ajudando a manter o tecido económico empresarial e a 
+                        criar postos de trabalho.</p>
+                    <p> Temos consciência de que não somos perfeitos e de que 
+                        o caminho que temos a percorrer ainda é longo, mas 
+                        queremos dar o nosso melhor para atingirmos patamares 
+                        de maior eficiência e respeito ambiental. </p>
+                    <p> A redução do uso de plásticos nas embalagens e caixas 
+                        é uma missão prioritária, tornando-as mais amigas do 
+                        ambiente e dando primazia a materiais biodegradáveis.</p>
+                    <p> Iremos manter-te a par do nosso progresso, porque o 
+                        compromisso para com todos é real. </p>
+                    <p> Queremos ser mais e queremos fazer mais. 
+                        Por ti, pelos teus, por todos. </p>
+                    <p> Junta-te a nós. </p>
+                    <!-- <p class="h5">Somos Fruut,
+                        <br>The Friendly Snack.</p> -->
+                    <button href="#" class="btn-primary btn-share">
+                        <img src="imgs/icons/share.svg" alt="partilhar">
+                        <span>Partilha</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Dados-->
+            <div class="col-12 col-t-6 offset-d-2 col-d-4">
+                <div class="dados">
+                    <div class="content">
+                        <div class="data-card">
+                            <img src="imgs/icons/comida.svg" alt="Fruut combate o desperdício alimentar" class="icon">
+                            <p class="h1 is-primary">1 300 000 000</p>
+                            <p>Toneladas de comida desperdiçada anualmente no mundo.</p>
+                        </div>
+                        <div class="data-card">
+                            <img src="imgs/icons/planeta.svg" alt="Fruut - missao planeta sustentavel" class="icon">
+                            <p class="h1 is-primary">3 300 000 000</p>
+                            <p>De CO2 libertados na atmosfera por ano resultante do desperdício alimentar.</p>
+                        </div>
+                        <div class="data-card">
+                            <img src="imgs/icons/lixo.svg" alt="Fruut - Responsabilidade social" class="icon">
+                            <p class="h1 is-primary">$1 000 000 000 000</p>
+                            <p>Consequência económica resultante do desperdício alimentar global.</p>
+                        </div>
+                    </div>
+                        <form action="#" class="join_us">
+                            <h1 class="is-primary">Manifesta-te!</h1>
+                            <p class="h5">
+                                Recebe dicas todas as semanas sobre 
+                                como reduzires o desperdício alimentar</p>
+                            <p>Email*</p>
+                            <input type="email" class="email is-black" name="email" placeholder="email@exemplo.com">
+                            <p class="rgpd">
+                                <span class="radio"><input type="checkbox" name="rgpd" id="rgbd"></span>
+                                <span> Aceito a Política de Privacidade.*</span>
+                            </p>
+                            <button class="btn-secondary" type="submit" value="Submit">Enviar</button>
+                        </form>
+                    </div>
+            </div>
+        </section>   
+    </main>
+    <footer>
+        <!-- Footer-Top -->
+        <div class="footer row nogutter ">
+            <a href="/index.html" class="col-a">
+                <img src="imgs/logo.svg" alt="Fruut the friendly snack" class="logo">
+            </a>
+            <div class="col-a">
+                <ul class="rowfull footer-list">
+                    <li class="col-a">
+                        <a href="https://fruut.pt/box-de-subscricao/" class="h6">Fruut Box</a>
+                        <a href="/sobre_nos.html" class="h6">Sobre a Fruut®</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="/blog.html" class="h6">Blog</a>
+                        <a href="https://fruut.pt/contacto/" class="h6">Contactos</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/faq/" class="h6">FAQ</a>
+                        <a href="https://fruut.pt/politica-privacidade/" class="h6">Política de Privacidade</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/termos-e-condicoes/" class="h6">Termos e Condições</a>
+                        <a href="https://www.livroreclamacoes.pt/entrar" class="h6">Livro de Reclamações Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col social-media">
+                <figure class="social">
+                    <img src="imgs/icons/facebook.svg" alt="Facebook Fruut" class="facebook imgfit">
+                    <img src="imgs/icons/instagram.svg" alt="Instagram Fruut" class="instagram imgfit">
+                    <img src="imgs/icons/youtube.svg" alt="Youtube Fruut" class="youtube imgfit">
+                </figure>
+            </div>
+        </div>
+        <!-- Footer-bottom -->
+        <div class="adress-footer">
+            <div class="row nogutter">
+                <div class="col-a">
+                    <p class="is-medium">Fala Connosco: 
+                    <span class="h6">+351 226 155 189&ensp;|&ensp;+351 961 493 092&ensp;|&ensp;frueat@frueat.pt&ensp;&ensp;</span></p>
+                </div>
+                <div class="col-a copywrite">
+                    <p class="is-medium">made with heart by: 
+                    <span class="h6">weboost.pt</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

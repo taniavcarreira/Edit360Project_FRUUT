@@ -1,0 +1,190 @@
+.container{
+    margin:0 64px;
+
+    .glide{
+        &__slide{
+            position: relative;
+            min-height: 289px; //345px;
+            // display: flex;
+            // justify-content: center; 
+            &:hover{
+                .afterbox{
+                    transform: scale(1.02);
+                }
+                .content{
+                    &:before{
+                        opacity: 1;
+                        transform: translate(0, -50%);
+                    }
+                    img{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .afterbox{
+                height: 70%; 
+                width: 100%;
+                max-width: 266px;
+                position: absolute;
+                top: 10px;
+                left: 0px;            
+                z-index:-1;
+                margin: auto;
+                @extend.bg-cover;
+            }
+            .content{
+                position:relative;
+                min-height: 345px; //360px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                    &:before{
+                    content: " ";
+                    background-size: contain;
+                    position: absolute;
+                    top: 110px;
+                    left: 65px; 
+                    display: block;
+                    height: 100px;
+                    opacity: 0;
+                    transition: $animationtime;
+                    width: 50%;
+                    z-index: -1;
+                    box-sizing:border-box;                
+                } 
+                &.maca{
+                    &:before{
+                        background-image: url("imgs/index/tabs/fruut-category/fruutmaca-hover.png");
+                        height: 100px;
+                        width: 50%;
+                    }
+                }
+                &.pera{
+                    &:before{
+                        background-image: url("imgs/index/tabs/fruut-category/fruutpera-hover.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+                &.abacaxi{
+                    &:before{
+                        background-image: url("imgs/index/tabs/fruut-category/fruutabacaxi-hover.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+                &.coco{
+                    &:before{
+                        background-image: url("imgs/index/tabs/fruut-category/fruutcoco-hover.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+                &.chipz{
+                    &:before{
+                        background-image: url("imgs/index/tabs/chipz-category/chipzmacacanela-hoer.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+                &.macaamendoim{
+                    &:before{
+                        background-image: url("imgs/index/tabs/mix-category/macaamendoim-hover.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+                &.macaamendoacoco{
+                    &:before{
+                        background-image: url("imgs/index/tabs/mix-category/macamaendoacoco-hover.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+                &.craaks{
+                    &:before{
+                        background-image: url("imgs/index/tabs/craak-category/hover.png");
+                        height: 100px;
+                        width: 50%;                    }
+                }
+   
+                .h5{
+                    margin:26px 12px 0 12px;
+                    color:$white;
+                    text-align:center;
+                }
+                img{
+                    position:absolute;
+                    top:48px;
+                    left: 16px;
+                    max-width: 233px;
+                }
+                span{
+                    margin:0;
+                }
+            }       
+        }
+        .glide__arrow{
+            color:unset;
+            padding: 9px 12px;
+            border:none;
+            box-shadow:unset;
+            text-shadow:unset;
+            height: 100%;
+            &--left{
+                left:-64px;
+            }
+            &--right{
+                right:-64px;
+            }
+        }
+        .glide__bullets{
+            bottom:-12px;
+            @media screen and (min-width:$tablet){
+                bottom:-24px;
+            }
+            .glide__bullet{
+                background-color: $grey;
+                width: 10px;
+                height: 10px;
+                border: none;
+                box-shadow: none;
+                margin: 0 9px; 
+                &--active {
+                    background-color: $primary;
+                }
+            }
+            
+        }
+    }
+}
+
+.blue{
+    background-image: url("imgs/index/tabs/Blue.jpg");
+}
+.red{
+    background-image: url("imgs/index/tabs/Red.jpg");
+}
+.brown{
+    background-image: url("imgs/index/tabs/Brown.jpg");
+}
+.yellow{
+    background-image: url("imgs/index/tabs/Yellow.jpg");
+}
+.green{
+    background-image: url("imgs/index/tabs/Green-Apple.jpg");
+}
+.greenpear{
+    background-image: url("imgs/index/tabs/Pear-Green.jpg");
+}
+.yellowbanana{
+    background-image: url("imgs/index/tabs/bgBanana.jpg");
+}
+.orange{
+    background-image: url("imgs/index/tabs/Orange.jpg");
+}
+.camel{
+    background-image: url("imgs/index/tabs/Camel.jpg");
+}
+.pink{
+    background-image: url("imgs/index/tabs/craaks1.jpg");
+}
+.purple{
+    background-image: url("imgs/index/tabs/craaks2.jpg"); 
+}
+

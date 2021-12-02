@@ -1,0 +1,95 @@
+//LIST ARTICLES//
+.card{
+    &-blog{
+        min-height:100%;
+        .cover{
+            img{
+                width:100%;
+                height:auto;
+                margin:0;
+                padding:0;
+            }
+        }
+    .h4{
+        margin-left:23px;
+        color:$black;
+        margin-top: 48px;
+    }    
+    .p, .p > a{
+        text-transform: uppercase;
+        color:$lightgrey;
+        margin-top:13px;
+        margin-bottom:20px;
+    }
+    }
+}
+
+//HOMEPAGE//
+.number-card{
+    margin-bottom:22px;
+        p:last-child{
+            margin-bottom:24px;
+        }
+        .icon{
+            font-size:52px;
+            font-weight:$bold;
+            line-height:54px;
+            margin-bottom:8px;
+            color:$grey;
+        }
+        .h5{
+            margin-bottom:8px;
+        }
+    @media screen and (min-width:$tablet){
+        margin-bottom:16px;
+        p:last-child{
+            margin-bottom:16px;
+        }
+    }
+}
+
+//HOMEPAGE + SOBRE//
+.icon-card{
+    box-shadow: 0 0 60px 2px rgba(1, 33, 92, 0.1);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding:48px 24px 24px 24px;
+    margin:12px 0;
+    @media screen and (min-width:$tablet) {
+        min-height:285px;
+        margin: 12px 0;    
+    }
+    .icon{
+        margin-bottom:16px;
+        min-height:64px;
+        @media screen and (min-width:$tablet) {
+            margin: 12px 0;    
+        }
+    }
+    .title{
+        color:$primary;
+        margin-bottom:8px;
+    }
+    .textcenter{
+        margin:0;
+    }
+}
+
+//MANIFESTO//
+.data-card{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    &:not(:last-child){
+        margin-bottom:5px;
+    }
+    .icon{
+        height:53px;
+    }
+    .h1{
+        margin-bottom:8px;
+    }
+}

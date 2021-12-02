@@ -1,0 +1,56 @@
+// COLORS THEME //
+$primary: #C10230;
+$primarydark:#C1022F;
+$secondary: darken($primary, 10%);
+$black: #333333;
+$white: #FFF;
+$lightgrey: #F4F4F4;
+$grey: #D8D8D8; 
+$greybg: #EEEEEE;
+
+
+
+// Animation //
+$animationtime: 0.25s;
+
+
+// GRID //
+$gridcolumns: 12;
+$gridguttermobile: 16px;
+$gridgutter: 24px;
+
+
+// RESPONSIVE Breackpoints//
+$mobile: 375px; //480px
+$tablet: 768px;
+$desktop: 1024px;
+$desktoplg: 1440px;
+
+// RESPONSIVE Grid//
+$gridwidth: calc(100% - #{$gridguttermobile}); //8px margem
+$gridwidtht: calc(100% - #{$gridgutter*4}); //48px margem
+$gridwidthd: calc(100% - #{$gridgutter*4}); //ecrã 1024 - 1200 sem margem
+$gridwidthdlg:  $desktop - $gridgutter*4; //ecrã90% -48px margem
+
+
+// FONTS //
+// Font-Family //
+$bodyfont: "Poppins";
+$bodyfontweights: "400;500;700;900";
+$bodyfontfamily: "Poppins";
+
+// Font-size //
+$basefontsizemobile: 16px;
+$basefontsizetablet: 16px;
+$basefontsizedesktop: 16px;
+
+// Font-weight //
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+$bolder: 900;
+
+
+// Border-radius //
+$radius_xl: 50px;

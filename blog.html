@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body >
+    <header> 
+        <!--PRE-HEADER-->
+        <div class="pre-header">
+            <div class="row">
+                <div class="col-a">
+                    <img src="imgs/icons/globe.svg">
+                    <span>Portes grátis</span>
+                </div>   
+                <div class="col-a"> 
+                    <img src="imgs/icons/security.svg">
+                    <span>Pagamento seguro</span>
+                </div>   
+            </div>
+        </div>
+        <!--HEADER-->
+        <div class="menu">
+            <div class="row">
+                <div class="col-a navbar">
+                    <a href="index.html" class="logo">
+                        <img src="imgs/logo.svg" alt="Fruut, the friendly snack">
+                    </a>
+                    <!--NAV-->
+                    <nav id="navbar">
+                        <ul class="list">
+                            <li><a href="https://fruut.pt/familia-fruut/" target="blank">Família Fruut</a></li>
+                            <li><a href="https://fruut.pt/" target="blank">Fruut Box</a></li>      
+                            <li><a href="manifesto.html">Manifesto</a></li>
+                            <li><a href="sobre_nos.html" class="active">Sobre</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="https://fruut.pt/contacto/" target="blank">Contacto</a></li>
+                            <li><a href="#">PT</a><a href="#">EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--ICON RIGHT-->
+                <div class="icons col-a">
+                    <a href="#" class="flagmobile">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/minha-conta/" target="blank" class="login">
+                        <img src="imgs/icons/account.svg" alt="Fruut:a minha conta" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/carrinho/" target="blank" class="cart">
+                        <img src="imgs/icons/cart.svg" alt="Fruut:carrinho" class="imgfit">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <label for="main-menu-check" onclick="openMenu()">
+                        <div id="bars">
+                            <div id="bars-a"></div>
+                            <div id="bars-b"></div>
+                            <div id="bars-c"></div>
+                        </div>
+                    </label>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <main id="blog">
+        <!-- Title & Subtitle-->
+        <section id="hero_blog" class="row nogutter hero_blog">
+            <div class="col-12 hero">
+                <h1 class="title">Blog</h1>
+            </div>
+        </section>
+        <!-- List Articles + Filters-->
+        <section class="row nogutter">
+            <div id="blog_categories" class="col-12 col-d-3">
+                    <div class="blog-container">
+                        <p>Quero saber mais sobre...</p>
+                        <!-- MOBILE - Select Category -->
+                        <div class="fullwidth">
+                            <form action="" class="blog">
+                                <select name="categories" class="select">
+                                    <option value="Filtrar">Filtrar</option>
+                                    <option value="Desperdício Zero">Desperdício Zero</option>
+                                    <option value="Receitas">De Portugal para o Mundo</option>
+                                    <option value="Dicas zero desperdício">Receitas Fruut</option>
+                                    <option value="Missão Planeta">Dicas de Nutrição</option>
+                                    <option value="O que é português é bom!">Cuidar do que é nosso</option>
+                                </select>
+                                <img src="imgs/icons/dropdown.svg" alt="select a category" class="imgfit">
+                            </form>
+                            <form action="" class="search-container">
+                                <input type="search" id="search" name="search" placeholder="Pesquisar">
+                                <button type="submit" onlick="search()">
+                                    <img src="imgs/icons/lupa.svg" alt="search">
+                                </button>
+                            </form>
+                        </div>
+                        <!-- TABLET/DESKTOP - Fixed Category Nav -->
+                            <aside id="sidenav" class="sidenav">
+                            <ul class="blog_categories">
+                                <li>
+                                    <input type="checkbox" id="desperdicio_zero" name="desperdicio_zero" value="Desperdício Zero" checked>
+                                    <label for="desperdicio_zero" onclick>Desperdício Zero</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="portugal_para_o_mundo" name="portugal_para_o_mundo" value="De Portugal para o Mundo">
+                                    <label for="portugal_para_o_mundo" onclick>De Portugal para o Mundo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="receitas_fruut" name="receitas_fruut" value="Receitas Fruut" >
+                                    <label for="dicas_zero_desperdicio" onclick>Receitas Fruut</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dicas_de_nutricao" name="dicas_de_nutricao" value="Dicas de Nutrição" >
+                                    <label for="dicas_de_nutricao" onclick>Dicas de Nutrição</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cuidar_do_que_e_nosso" name="cuidar_do_que_e_nosso" value="Cuidar do que é nosso" >
+                                    <label for="cuidar_do_que_e_nosso" onclick>Cuidar do que é nosso</label>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <!-- Articles & Pagination -->
+            <div id="blog_articles" class="col-12 offset-d-1 col-d-8">
+                <!-- SortBy -->
+                <div class="rowfull sortby">
+                    <div class="col-a">
+                        <span>Ordernar por</span>
+                            <img src="imgs/icons/dropdown.svg" alt="select a category" class="">
+                        <select name="sortby" class="sortby-filter">
+                            <option value="recente">Mais recente</option>
+                            <option value="antigo">Mais antigo</option>
+                            <img src="imgs/icons/dropdown.svg" alt="select a category" class="imgfit">
+                        </select>
+                    </div> 
+                </div>
+                <!-- Articles -->
+                <div class="rowfull">
+                    <!--Article1-->
+                    <a href="#" class="col-12 col-t-6 col-d-6">
+                        <div class="article left">
+                            <img src="imgs/blog/artigo1.png" loading="lazy" alt="" class="imgfit">
+                            <div class="text">
+                                <h2 class="h4">
+                                    Sustentabilidade: como fazer uma horta em casa
+                                    <br> <br>
+                                </h2>
+                                <p class="data">
+                                    <span class="data">5 JUL, 2021</span>
+                                    <span class="category">CUIDAR DO QUE É NOSSO</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Article2-->
+                    <a href="#" class="col-12 col-t-6 col-d-6">
+                        <div class="article right">
+                            <img src="imgs/blog/artigo2.png" loading="lazy" alt="" class="imgfit">
+                            <div class="text">
+                                <h2 class="h4">
+                                    Preparar e conservar as marmitas | Nutricionista Oksana Zagoruy
+                                </h2>
+                                <p class="data">
+                                    <span class="data">21 JUN, 2021</span>
+                                    <span class="category">DICAS DE NUTRIÇÃO</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Article3-->
+                    <a href="artigo.html" class="col-12 col-t-6 col-d-6">
+                        <div class="article left">
+                            <img src="imgs/blog/artigo3.png" loading="lazy" alt="" class="imgfit">
+                            <div class="text">
+                                <h2 class="h4">
+                                    Desperdício Alimentar: o que é | Anna Maseillo - activista ambiental
+                                </h2>
+                                <p class="data">
+                                    <span class="data">15 JUN, 2021</span>
+                                    <span class="category">DESPERDÍCIO ZERO</span>
+                                </p>
+                            </div>     
+                        </div>
+                    </a>
+                    <!--Article4-->
+                    <a href="#" class="col-12 col-t-6 col-d-6">
+                        <div class="article right">
+                            <img src="imgs/blog/artigo4.png" loading="lazy" alt="" class="imgfit">
+                            <div class="text">
+                                <h2 class="h4">
+                                    Eco Resorts: o turismo amigo do ambiente
+                                </h2>
+                                <p class="data">
+                                    <span class="data">2 JUN, 2021</span>
+                                    <span class="category">DE PORTUGAL PARA O MUNDO</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Article5-->
+                    <a href="#" class="col-12 col-t-6 col-d-6">
+                        <div class="article left">
+                            <img src="imgs/blog/artigo5.png" alt="" loading="lazy" class="imgfit">
+                            <div class="text">
+                                <h2 class="h4">
+                                    Como reaproveitares os alimentos esquecidos na despensa
+                                </h2>
+                                <p class="data">
+                                    <span class="data">24 MAI, 2021</span>
+                                    <span class="category">RECEITAS FRUUT</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Article6-->
+                    <a href="#" class="col-12 col-t-6 col-d-6">
+                        <div class="article right">
+                            <img src="imgs/blog/artigo6.png" loading="lazy" alt="" class="imgfit">
+                            <div class="text">
+                                <h2 class="h4">
+                                    Como reduzires a tua pegada ecológica
+                                </h2>
+                                <p class="data">
+                                    <span class="data">13 MAI, 2021</span>
+                                    <span class="category">CUIDAR DO QUE É NOSSO</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Pagination -->
+                <div class="pagination rowfull">
+                    <button class="col-a" onclick="loadMore()">Mais Antigos</button>
+                    <div class="col-a pages">
+                        <button onclick="loadPage()" class="active">01</button>
+                        <button onclick="loadPage()">02</button>
+                        <button onclick="loadPage()">03</button>
+                        <button onclick="loadPage()">04</button>
+                        <button onclick="loadPage()">05</button>
+                        <button onclick="loadPage()">06</button>
+                    </div>
+                    <button class="col-a" onclick="loadMore()">Mais Antigos</button>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter -- REVER COM UX-->
+        <section id="newsletter" class="rowfull">
+            <div class="row nogutter">
+                <form action="#" class="col-12 col-t-12 offset-d-1 col-d-5 flex-container">
+                    <h2>Uma Newsletter por um mundo mais friendly!</h2>
+                    <p>
+                        Queremos partilhar contigo dicas de sustentabilidade, 
+                        receitas mais saudáveis e iniciativas que 
+                        marcam a diferença. Junta-te a nós!
+                    </p>
+                    <input type="email" class="email" name="email" placeholder="email@exemplo.com">
+                    <p class="rgpd">
+                        <span class="radio"><input type="checkbox" name="rgpd" id="rgbd"></span>
+                        <span> Aceito a Política de Privacidade.*</span>
+                    </p>
+                    <button class="btn-secondary" type="submit" value="Submit">Subscrever</button>
+                </form>
+            </div>
+        </section>     
+    </main>
+    <footer>
+        <!-- Footer-Top -->
+        <div class="footer row nogutter ">
+            <a href="/index.html" class="col-a">
+                <img src="imgs/logo.svg" alt="Fruut the friendly snack" class="logo">
+            </a>
+            <div class="col-a">
+                <ul class="rowfull footer-list">
+                    <li class="col-a">
+                        <a href="https://fruut.pt/box-de-subscricao/" class="h6">Fruut Box</a>
+                        <a href="/sobre_nos.html" class="h6">Sobre a Fruut®</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="/blog.html" class="h6">Blog</a>
+                        <a href="https://fruut.pt/contacto/" class="h6">Contactos</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/faq/" class="h6">FAQ</a>
+                        <a href="https://fruut.pt/politica-privacidade/" class="h6">Política de Privacidade</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/termos-e-condicoes/" class="h6">Termos e Condições</a>
+                        <a href="https://www.livroreclamacoes.pt/entrar" class="h6">Livro de Reclamações Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col social-media">
+                <figure class="social">
+                    <img src="imgs/icons/facebook.svg" alt="Facebook Fruut" class="facebook imgfit">
+                    <img src="imgs/icons/instagram.svg" alt="Instagram Fruut" class="instagram imgfit">
+                    <img src="imgs/icons/youtube.svg" alt="Youtube Fruut" class="youtube imgfit">
+                </figure>
+            </div>
+        </div>
+        <!-- Footer-bottom -->
+        <div class="adress-footer">
+            <div class="row nogutter">
+                <div class="col-a">
+                    <p class="is-medium">Fala Connosco: 
+                    <span class="h6">+351 226 155 189&ensp;|&ensp;+351 961 493 092&ensp;|&ensp;frueat@frueat.pt&ensp;&ensp;</span></p>
+                </div>
+                <div class="col-a copywrite">
+                    <p class="is-medium">made with heart by: 
+                    <span class="h6">weboost.pt</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

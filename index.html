@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header> 
+        <!--PRE-HEADER-->
+        <div class="pre-header">
+            <div class="row">
+                <div class="col-a">
+                    <img src="imgs/icons/globe.svg">
+                    <span>Portes grátis</span>
+                </div>   
+                <div class="col-a"> 
+                    <img src="imgs/icons/security.svg">
+                    <span>Pagamento seguro</span>
+                </div>   
+            </div>
+        </div>
+        <!--HEADER-->
+        <div class="menu">
+            <div class="row">
+                <div class="col-a navbar">
+                    <a href="index.html" class="logo">
+                        <img src="imgs/logo.svg" alt="Fruut, the friendly snack">
+                    </a>
+                    <!--NAV-->
+                    <nav id="navbar">
+                        <ul class="list">
+                            <li><a href="https://fruut.pt/familia-fruut/" target="blank">Família Fruut</a></li>
+                            <li><a href="https://fruut.pt/" target="blank">Fruut Box</a></li>      
+                            <li><a href="manifesto.html">Manifesto</a></li>
+                            <li><a href="sobre_nos.html" class="active">Sobre</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="https://fruut.pt/contacto/" target="blank">Contacto</a></li>
+                            <li><a href="#">PT</a><a href="#">EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--ICON RIGHT-->
+                <div class="icons col-a">
+                    <a href="#" class="flagmobile">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/minha-conta/" target="blank" class="login">
+                        <img src="imgs/icons/account.svg" alt="Fruut:a minha conta" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/carrinho/" target="blank" class="cart">
+                        <img src="imgs/icons/cart.svg" alt="Fruut:carrinho" class="imgfit">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <label for="main-menu-check" onclick="openMenu()">
+                        <div id="bars">
+                            <div id="bars-a"></div>
+                            <div id="bars-b"></div>
+                            <div id="bars-c"></div>
+                        </div>
+                    </label>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- SLIDER-->
+        <section id="hero-slider" class="hero-section rowfull nogutter">
+            <div class="col-12 col-t-12 col-d-12">
+                <div id="slider_banner" class="slideshow-container row">
+                    <div class="mySlides slide1 fade rowfull overlay-gradient">
+                        <div class="col-12 offset-t-2 col-t-8 offset-d-1 col-d-8">
+                            <div class="content bg-gradient">
+                                <h1>Fruut é um snack 100% natural</h1>
+                                <p>A Natureza é o nosso maior tesouro.</p>
+                                <a href="https://fruut.pt/" class="btn-primary">Quero Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides slide2 fade rowfull overlay-gradient">
+                        <div class="col-12 offset-t-2 col-t-8 offset-d-1 col-d-8">
+                            <div class="content">
+                                <p class="h1 is-white">Sabes o que vem aí?</p>
+                                <p class="is-white">Não percas as novidades</p>
+                                <a href="landing_page.html" class="btn-primary is-white">Aventura-te</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1,document.getElementById('slider_banner'))">
+                        <img src="imgs/icons/arrowblack.svg" alt="slide anterior">
+                    </a>
+                    <a class="next" onclick="plusSlides(1,document.getElementById('slider_banner'))">
+                        <img src="imgs/icons/arrowblack.svg" alt="slide seguinte">
+                    </a>
+                </div>
+                <div class="dots rowfull">
+                    <span class="dot active" onclick="currentSlide(1,document.getElementById('slider_banner'))"></span> 
+                    <span class="dot" onclick="currentSlide(2,document.getElementById('slider_banner'))"></span> 
+                </div>
+            </div>
+        </section>
+        <!-- BOX & PRODUCTS-->
+        <section id="product-banners" class="row is-relative margintop_72 margintop_t80">
+            <div class="card col-12 col-t-12 col-d-6">
+                <div class="content-img img1 bg-cover marginbottom_24 margin_d0 rowfull">
+                    <div class="overlay">
+                        <div class="content-text is-absolute flex-v-container">
+                            <h2>Fruut Box</h2>
+                            <p>Os snacks mais crocantes e 100% naturais à tua porta</p>
+                            <a href="#" class="btn-terciary-bgtrans">Ver caixas de subscrição</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-d-6">
+                <div class="content-img img2 bg-cover rowfull">
+                    <div class="content-text is-absolute flex-v-container bg-white">
+                        <h2>Snacks Fruut</h2>
+                        <p>As tuas pausas nunca mais vão ser iguais. Fruut é a tua melhor companhia.</p>
+                        <a href="#" class="btn-terciary-bgwhite">Ver produtos fruut</a>
+                        <div class=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Os NOSSOS SNACKS + TAB PRODUCTS - copy:ok-->
+        <section id="nossos-snacks" class="row margintop_72 margintop_t80">
+            <div class="col-12 col-d-6">
+                <h2 class="is-primary">Os nossos snacks</h2>
+                <p class="marginbottom_30">Fruut não é só mais um snack de fruta. Sabes porquê?</p>
+                <div class="rowfull nogutter number-card">
+                    <div class="col-12 col-t-6 left">
+                        <p class="icon">1.</p>
+                        <p class="h5">Leve</p>
+                        <p>Fruut não pesa na mochila, 
+                            na mala e no saco do treino. 
+                            E também não te pesa no estômago.</p>
+                    </div>
+                    <div class="col-12 col-t-6 right">
+                        <p class="icon">2.</p>
+                        <p class="h5">Sem rasto</p>
+                        <p>Fruta fatiada que não te obriga a sujar as mãos...</p>
+                    </div>
+                    <div class="col-12 col-t-6 left">
+                        <p class="icon">3.</p>
+                        <p class="h5">Prático</p>
+                        <p>Vai contigo para todo o lado, a qualquer hora.</p>
+                    </div>
+                    <div class="col-12 col-t-6 right">
+                        <p class="icon">4.</p>
+                        <p class="h5">Natural</p>
+                        <p>Sem adição de açúcar, sem corantes ou conservantes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs Products-->                                    
+            <div class="col-12 col-d-6">
+                <!-- Tabs-->                                                    
+                <div class="textcenter tabs">
+                    <button class="fruut_tab tablink active" onclick="tabs(event,'fruut'); reloadGlide();">Fruut</button>
+                    <button class="chipz_tab tablink" onclick="tabs(event,'chipz'); reloadGlide();">Chipz</button>
+                    <button class="mix_tab tablink" onclick="tabs(event,'mix'); reloadGlide();">Mix</button>
+                    <button class="craaks_tab tablink" onclick="tabs(event,'craaks'); reloadGlide();">Craaks</button>
+                </div>
+                <!-- Content - Sliders-->                    
+                <!-- Fruut Slider-->                                        
+                <div id="fruut" class="container product-category">
+                    <div class="fruut category-product">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-coco/" target="blank">
+                                            <div class="afterbox blue"></div>
+                                            <div class="content coco">
+                                                <h3 class="h5">Fruut Coco</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutcoco.png" loading="lazy" class="imgfit" alt="Fruut Coco desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-maca-vermelha/" target="blank">
+                                            <div class="afterbox red"></div>
+                                            <div class="content maca">
+                                                <h3 class="h5">Fruut Maçã Vermelha</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutmacared.png" loading="lazy" class="imgfit" alt="Fruut Maçã Vermelha desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-maca-com-canela/" target="blank">
+                                            <div class="afterbox brown"></div>
+                                            <div class="content maca">
+                                                <h3 class="h5">Fruut Maçã com Canela</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutmacacanela.png" loading="lazy" class="imgfit" alt="Fruut Maçã desidratada e canela">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-kids/" target="blank">
+                                            <div class="afterbox yellow"></div>
+                                            <div class="content maca">
+                                                <h3 class="h5">Fruut Kids</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutkids.png" loading="lazy" class="imgfit" alt="Fruut Kids Maçã desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-maca-verde/" target="blank">
+                                            <div class="afterbox green"></div>
+                                            <div class="content maca">
+                                                <h3 class="h5">Fruut Maçã Verde</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutmacaverde.png" loading="lazy" class="imgfit" alt="Fruut Maçã Verde desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-abacaxi/" target="blank">
+                                            <div class="afterbox yellow"></div>
+                                            <div class="content abacaxi">
+                                                <h3 class="h5">Fruut Abacaxi</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutabacaxi.png" loading="lazy" class="imgfit" alt="Fruut Abacaxi desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-pera-rocha/" target="blank">
+                                            <div class="afterbox greenpear"></div>
+                                            <div class="content pera">
+                                                <h3 class="h5">Fruut Pera Rocha</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutpera.png" loading="lazy" class="imgfit" alt="Fruut Pera desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/fruut-banana/" target="blank">
+                                            <div class="afterbox yellowbanana"></div>
+                                            <div class="content">
+                                                <h3 class="h5">Fruut Banana</h3>
+                                                <img src="imgs/index/tabs/fruut-category/fruutBanana.png" loading="lazy" class="imgfit" alt="Fruut Banana desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut anterior">
+                                    </button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut seguinte" style="width: ;transform: rotate(180deg)">
+                                    </button>
+                                </div>
+                                <div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                                    <button class="glide__bullet" data-glide-dir="=6"></button>
+                                    <button class="glide__bullet" data-glide-dir="=7"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chipz Slider-->   
+                <div id="chipz" class="container product-category displaynone">                                     
+                    <div class="chipz category-product">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/chipz-maca-verde/" target="blank">
+                                            <div class="afterbox green"></div>
+                                                <div class="content chipz">
+                                                <h3 class="h5">CHIPZ Maçã Vermelha</h3>                                           
+                                                <img src="imgs/index/tabs/chipz-category/chipzmacagreen.png" loading="lazy" alt="Fruut CHIPZ Maçã Verde desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/chipz-maca-com-canela/" target="blank">
+                                            <div class="afterbox orange"></div>
+                                            <div class="content chipz">
+                                                <h3 class="h5">CHIPZ Maçã com Gengibre</h3> 
+                                                <img src="imgs/index/tabs/chipz-category/chipzmacaginger.png" loading="lazy" alt="Fruut CHIPZ Maçã desidratadacom Canela">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/chipz-maca-com-gengibre/" target="blank">
+                                            <div class="afterbox brown"></div>
+                                            <div class="content maca">
+                                                <h3 class="h5">CHIPZ Maçã com Canela</h3> 
+                                                <img src="imgs/index/tabs/chipz-category/chipzmacacanela.png" loading="lazy" alt="Fruut CHIPZ Maçã desidratada com Gengibre">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/chipz-maca-vermelha/" target="blank">
+                                            <div class="afterbox red"></div>
+                                            <div class="content maca">
+                                                <h3 class="h5">CHIPZ Maçã Verde</h3> 
+                                                <img src="imgs/index/tabs/chipz-category/chipzmacared.png" loading="lazy" alt="Fruut Kids Maçã Vermelha desidratada">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                </ul>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut anterior">
+                                    </button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut seguinte" style="width: ;transform: rotate(180deg)">
+                                    </button>
+                                </div>
+                                <div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mix Slider-->                    
+                <div id="mix" class="container product-category displaynone">
+                    <div class="mix category-product">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/mix-maca-e-amendoim/" target="blank">
+                                            <div class="afterbox camel"></div>
+                                            <div class="content macaamendoim">
+                                                <h3 class="h5">Mix Maçã e Amendoim</h3>
+                                                <img src="imgs/index/tabs/mix-category/macaamendoim.png" loading="lazy" alt="Fruut MIX Maçã desidratada e amendoim">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/mix-maca-amendoas-e-coco/" target="blank">
+                                            <div class="afterbox blue"></div>
+                                            <div class="content macaamendoacoco">
+                                                <h3 class="h5">Mix de Maçã, Coco & Amêndoas</h3>
+                                                <img src="imgs/index/tabs/mix-category/macamaendoacoco.png" loading="lazy" alt="Fruut MIX Maçã e coco desidratado e amendoas">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a>                                     
+                                    </li>
+                                </ul>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut anterior">
+                                    </button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut seguinte" style="width: ;transform: rotate(180deg)">
+                                    </button>
+                                </div>
+                                <div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Craaks Slider-->
+                <div id="craaks" class="container product-category displaynone">
+                    <div class=" craaks category-product">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/tortitas-de-lentilhas-beterraba-e-cenoura/" target="blank">
+                                            <div class="afterbox pink"></div>
+                                            <div class="content craaks">
+                                                <h3 class="h5">Tortitas de Lentilhas, Beterraba e Cenoura</h3>
+                                                <img src="imgs/index/tabs/craak-category/lentilhasbeterraba.png" loading="lazy" alt="Fruut CRAAKS Tortitas de Lentilhas Beterraba e Cenoura">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li class="glide__slide">
+                                        <a href="https://fruut.pt/produto/tortitas-de-lentilhas-e-maca/" target="blank">
+                                            <div class="afterbox purple"></div>
+                                            <div class="content craaks">
+                                                <h3 class="h5">Tortitas de Lentilhas e Maçã</h3>
+                                                <img src="imgs/index/tabs/craak-category/lentilhasmaca.png" loading="lazy" alt="Fruut CRAAKS Tortitas de Lentilhas e Maçã">
+                                                <span class="btn-primary paddinghorizontal_40">Mais info</span>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                </ul>
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut anterior">
+                                    </button>
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                        <img src="imgs/icons/arrowblack.svg" alt="snack fruut seguinte" style="width: ;transform: rotate(180deg)">
+                                    </button>
+                                </div>
+                                <div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MANIFESTO-->
+        <section id="manifesto" class="rowfull margintop_72 margintop_t80">
+            <!-- MANIFESTA-TE-->
+            <div class="col-12 col-d-6">
+                <div class="rowfull has-greybg left-section">
+                    <div class="col-12 col-t-12 col-d-12">
+                        <div class="content">
+                            <h2 class="is-primary marginbottom24">Manifesta-te</h2>
+                            <p class="text marginbottom16"> Esta é a nossa missão! Queremos que nos acompanhes nesta jornada, 
+                                porque juntos conseguimos chegar mais longe, mais depressa. 
+                            </p>
+                            <p class="text marginbottom32"> Junta-te ao nosso compromisso para criarmos uma sociedade mais justa,
+                                com menos desperdício e mais sustentável, onde todos possam ter voz 
+                                activa na procura de um mundo mais verde e friendly! 
+                            </p>
+                            <a href="#" class="btn-primary">Ver manifesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POSICIONAMENTO-->
+            <div class="col-12 col-d-6">
+                <div class="rowfull nogutter right-section">
+                    <div class="col-12 col-t-6 left">
+                        <div class="icon-card">
+                            <img class="icon" src="imgs/icons/missao.svg" alt="">
+                            <h3 class="h5 title">Missão</h3>
+                            <p class="textcenter">O caminho é claro. Mudar hábitos e mentalidades, cuidar melhor do planeta. </p>
+                        </div>
+                    </div>                    
+                    <div class="col-12 col-t-6 right">
+                        <div class="icon-card">
+                            <img class="icon" src="imgs/icons/compromisso.svg" alt="">
+                            <h3 class="h5 title">Compromisso</h3>
+                            <p class="textcenter">Ir mais longe, contigo ao nosso lado. Só assim conseguimos uma sociedade mais justa e sustentável.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-t-6 left">
+                        <div class="icon-card">
+                            <img class="icon" src="imgs/icons/desperdicio-zero.svg" alt="">
+                            <h3 class="h5 title">Desperdício Zero</h3>
+                            <p class="textcenter">O desperdício alimentar também contribui para o aumento da emissão dos gases de estufa.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-t-6 right">
+                        <div class="icon-card">
+                            <img class="icon" src="imgs/icons/friendly.svg" alt="">
+                            <h3 class="h5 title">Friendly</h3>
+                            <p class="textcenter">O mundo precisa de ser um lugar mais friendly. Cabe a cada um de nós lutar por isso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FRUUTBOX-->
+        <section id="fruutbox" class="row margintop_80">
+            <div class="col-12 col-d-6 left-section">
+                <figure class="has-bgradial-primary">
+                    <img class="img" src="imgs/index/fruutbox-section.png" loading="lazy" alt="Encomenda a tua Fruut Box">
+                </figure>
+            </div>
+            <div class="col-12 col-d-6 right-section">
+                <h2 class="title is-primary">Fruut Box</h2>
+                <h3 class="h4 subtitle">3...2...1... Encomenda a tua Fruut Box!</h3>
+                <img class="img" src="imgs/index/fruutbox-section-mobile.png" loading="lazy" alt="Encomenda a tua Fruut Box">
+                <p class="text">
+                    Podes encomendar apenas uma box ou fazer uma subscrição por 6 ou 12 meses.
+                    Escolhe a tua box ideal, decide se queres uma encomenda única ou um compromisso
+                    mais sério. Faz o unboxing, partilha com os amigos e disfruuta.
+                </p>
+                <div class="rowfull nogutter">
+                    <div class="col-a number-card">
+                       <p class="icon">1.</p> 
+                       <p class="h5">A tua box ideal</p>
+                    </div>
+                    <div class="col-a number-card">
+                        <p class="icon">2.</p> 
+                        <p class="h5">Pagamento</p>
+                     </div>
+                     <div class="col-a number-card">
+                        <p class="icon">3.</p> 
+                        <p class="h5">Disfruuta</p>
+                     </div>
+                </div>
+                <a href="#" class="btn-primary">ver fruut box</a>
+            </div>
+        </section>
+        <!-- PONTOS FRUUT-->
+        <section id="pontos-fruut" class="rowfull has-greybg margintop_72 margintop_t80">
+            <div class="row nogutter content">
+                <img src="imgs/index/maça-arbusto.svg" loading="lazy" class="img-absolute__left"></img>
+                <img src="imgs/index/maça-arbusto.svg" loading="lazy" class="img-absolute__right"></img>
+                <div class="col-12 col-t-6">
+                    <div class="left-section">
+                        <h2 class="title">Pontos Fruut</h2>
+                        <p class="subtitle">Ganha pontos com pequenos gestos</p>
+                    </div>
+                </div>
+                <div class="col-12 col-t-5">
+                    <div class="right-section">
+                        <p class="text paddingbottom_24">
+                            Junta-te à Fruut, ganha pontos, troca-os por snacks ou 
+                            por alguns objectos que te ajudarão a contribuir para um 
+                            futuro mais sustentável e saudável! Fazemos este caminho juntos?
+                        </p>
+                        <a href="#" class="btn-primary">SABER MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Relacionados -->
+        <section id="blog_articles" class="rowfull margintop_72 margintop_t80">
+            <!--Title-->
+            <div class="row">
+                <h2 class="col-12 title">Blog</h2>
+                <!--Article1-->
+                <a class="col-12 col-t-6 col-d-4">
+                    <div class="article">
+                        <figure>
+                            <img src="imgs/blog/artigo3.png" loading="lazy" 
+                            alt="Fruut Desperdício Alimentar: o que é? por: Anna Maseillo - activista ambiental" 
+                            class="imgfit">
+                        </figure>
+                        <div class="text">
+                            <h2 class="h4">
+                                Desperdício Alimentar: o que é
+                                | Anna Maseillo - activista ambiental                            
+                            </h2>
+                            <p class="data">
+                                <span class="data">15 JUN, 2021</span>
+                                <span class="category">DESPERDÍCIO ZERO</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--Article2-->
+                <a class="col-12 col-t-6 col-d-4">
+                    <div class="article">
+                        <figure>
+                        <img src="imgs/blog/artigo1.png" loading="lazy" 
+                        alt="Sustentabilidade: como fazer uma horta em casa" 
+                        class="imgfit">
+                    </figure>
+                    <div class="text">
+                        <h2 class="h4">
+                            Sustentabilidade: como fazer uma horta em casa
+                        </h2>
+                        <p class="data">
+                            <span class="data">5 JUL, 2021</span>
+                            <span class="category">CUIDAR DO QUE É NOSSO</span>
+                        </p>
+                    </div>
+                    </div>
+                </a>
+                <!--Article3-->
+                <a class="col-12 col-t-6 col-d-4">
+                    <div class="article">
+                        <figure>
+                            <img src="imgs/blog/artigo4.png" loading="lazy" 
+                            alt="Eco Resorts: o turismo amigo do ambiente" 
+                            class="imgfit">
+                        </figure>
+                        <div class="text">
+                            <h2 class="h4">
+                                Eco Resorts: o turismo amigo do ambiente
+                            </h2>
+                            <p class="data">
+                                <span class="data">2 JUN, 2021</span>
+                                <span class="category">CUIDAR DO QUE É NOSSO</span>
+                            </p>
+                        </div>     
+                    </div>
+                </a> 
+            </div>    
+        </section>
+        <!-- NEWSLETTER - Copy Ok-->
+        <section id="newsletter" class="rowfull margintop_72 margintop_t80">
+            <div class="row nogutter">
+                <form action="#" class="col-12 col-t-12 offset-d-1 col-d-5 flex-container">
+                    <h2>Uma Newsletter por um mundo mais friendly!</h2>
+                    <p>
+                        Queremos partilhar contigo dicas de sustentabilidade, 
+                        receitas mais saudáveis e iniciativas que 
+                        marcam a diferença. Junta-te a nós!
+                    </p>
+                    <input type="email" class="email" name="email" placeholder="email@exemplo.com">
+                    <p class="rgpd">
+                        <span class="radio"><input type="checkbox" name="rgpd" id="rgbd"></span>
+                        <span> Aceito a Política de Privacidade.*</span>
+                    </p>
+                    <button class="btn-secondary" type="submit" value="Submit">Subscrever</button>
+                </form>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <!-- Footer-Top -->
+        <div class="footer row nogutter ">
+            <a href="/index.html" class="col-a">
+                <img src="imgs/logo.svg" alt="Fruut the friendly snack" class="logo">
+            </a>
+            <div class="col-a">
+                <ul class="rowfull footer-list">
+                    <li class="col-a">
+                        <a href="https://fruut.pt/box-de-subscricao/" class="h6">Fruut Box</a>
+                        <a href="/sobre_nos.html" class="h6">Sobre a Fruut®</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="/blog.html" class="h6">Blog</a>
+                        <a href="https://fruut.pt/contacto/" class="h6">Contactos</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/faq/" class="h6">FAQ</a>
+                        <a href="https://fruut.pt/politica-privacidade/" class="h6">Política de Privacidade</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/termos-e-condicoes/" class="h6">Termos e Condições</a>
+                        <a href="https://www.livroreclamacoes.pt/entrar" class="h6">Livro de Reclamações Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col social-media">
+                <figure class="social">
+                    <img src="imgs/icons/facebook.svg" alt="Facebook Fruut" class="facebook imgfit">
+                    <img src="imgs/icons/instagram.svg" alt="Instagram Fruut" class="instagram imgfit">
+                    <img src="imgs/icons/youtube.svg" alt="Youtube Fruut" class="youtube imgfit">
+                </figure>
+            </div>
+        </div>
+        <!-- Footer-bottom -->
+        <div class="adress-footer">
+            <div class="row nogutter">
+                <div class="col-a">
+                    <p class="is-medium">Fala Connosco: 
+                    <span class="h6">+351 226 155 189&ensp;|&ensp;+351 961 493 092&ensp;|&ensp;frueat@frueat.pt&ensp;&ensp;</span></p>
+                </div>
+                <div class="col-a copywrite">
+                    <p class="is-medium">made with heart by: 
+                    <span class="h6">weboost.pt</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/index.js"></script>
+    <script> 
+        const sliders = document.querySelectorAll('.glide');
+        const glide = [];
+        for (let i = 0; i < sliders.length; i++) {
+            glide[i] = new Glide(sliders[i], {
+                gap: 40,
+                type: 'carousel',
+                perView: 2,
+                breakpoints: {
+                    768: {
+                        perView: 1
+                    }
+                }
+            });
+            glide[i].mount();
+        }
+        function reloadGlide(){
+            for (let i = 0; i < sliders.length; i++) {
+                glide[i].update({ startAt: 1 });
+            }
+        }
+    </script>
+</body>
+</html>
+

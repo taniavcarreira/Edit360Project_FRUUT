@@ -1,0 +1,70 @@
+/* ============ MARGINS & PADDINGS ============== */
+
+//margin-top
+    .margintop_72{ //used
+        margin-top:72px !important;
+    } 
+    .margintop_80{ //used
+        margin-top:80px !important;
+    } 
+
+//margin-bottom
+    .marginbottom_16{ //used
+        margin-bottom:16px !important;
+    }
+    .marginbottom_24{ //used
+        margin-bottom:24px !important;   
+    }
+    .marginbottom_30{
+        margin-bottom:30px !important;
+    }
+    .marginbottom_32{ //used
+        margin-bottom:32px !important;
+    }
+    .marginbottom_40{ //used
+        margin-bottom:40px !important;
+    }
+
+//padding
+    .paddingnone{
+        padding:0 !important;
+    }
+//padding-vertical
+    .paddingvertical_12{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+//padding-horizontal
+    .paddinghorizontal_40{ //used
+        padding-left:40px !important;
+        padding-right:40px !important;
+    }
+//padding-bottom
+    .paddingbottom_24{ //used
+        padding-bottom:24px !important;
+    }
+//padding-top
+    .paddingtop_80{ //used
+        padding-top:80px !important;
+    }
+
+// TABLET //
+@media screen and (min-width:$tablet) {          
+    .margintop_t80{ //used
+        margin-top:80px !important;
+    } 
+}
+
+// DESKTOP //
+@media screen and (min-width:$desktop) {
+    .margintop_d80{ //used
+        margin-top:80px !important;
+    } 
+}
+
+
+
+
+
+
+

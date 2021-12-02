@@ -1,0 +1,104 @@
+.animate{
+    -webkit-transition: all $animationtime ease;
+    -moz-transition: all $animationtime ease;
+    -ms-transition: all $animationtime ease;
+    -o-transition: all $animationtime ease;
+    transition: all $animationtime ease;
+}
+
+/* ============ FONT / TEXT ============== */
+
+.textright{
+    text-align:right;
+}
+.textcenter{
+    text-align:center;
+}
+.is-medium{
+    font-weight:$medium !important;
+}
+.is-bold{
+    font-weight:$bold !important;
+}
+
+/* ============ FONT COLORS ============== */
+
+.is-black{
+    color: $black;
+}
+.is-primary{
+    color: $primary;
+}
+.is-white{
+    color: $white;
+}
+
+/* ============ BG COLORS ============== */
+
+.has-bgradial-primary{
+    background: radial-gradient(#DD273E, #AB1E30);
+}
+.has-greybg{
+    background-color: $greybg;
+}
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ============ POSITION ============== */
+
+.is-relative{
+    position: relative !important;
+}
+.is-absolute{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display:flex;
+}
+.flex-v-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.is-flex-row{
+    flex-direction:row;
+    display:flex;
+}
+.fullwidth{
+    width: 100%;
+}
+.displaynone{
+    display:none;
+}
+.displayblock{
+    display:block;
+}
+
+/* ====================== */
+/* ======= IMAGES ======= */
+/* ====================== */
+
+
+.imgfit{
+    display: block;
+    width: 100%;
+    height: auto;
+    img, source{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+.overlay-gradient{
+    width: 100%;
+    height:100%;
+    background: linear-gradient(90deg, #00000060 0%, #00d4ff00 100%);
+
+}

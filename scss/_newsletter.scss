@@ -1,0 +1,45 @@
+#newsletter{
+    background-image: url(imgs/newsletter/banner_newsletter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width:$tablet){
+        .row{
+            justify-content: center;
+        }
+    }
+    
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color:$white;
+        max-width:450px;
+        h2{
+          color:$white;
+          margin-top:63px;
+          margin-bottom:16px;
+          @media screen and (min-width:$tablet){
+            margin-top:99px;
+          }
+        }
+        p{
+            margin-bottom:32px;
+            @media screen and (min-width:$tablet){
+                margin-bottom:24px;
+              }
+        }
+        .email{
+            margin-bottom:1rem;
+            @media screen and (min-width:$tablet){
+                width: 70%;
+            }
+        }
+        button{
+            margin-bottom:239px;
+            @media screen and (min-width:$tablet){
+                margin-bottom:98px;
+              }
+        }
+    }
+}

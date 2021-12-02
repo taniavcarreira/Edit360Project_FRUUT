@@ -1,0 +1,103 @@
+footer{
+    background-color: $lightgrey;
+    .footer{
+        align-items: center;
+        flex-direction:column;
+        @media screen and (min-width:$desktop) {
+            flex-direction:row;
+        }
+        .logo{
+            padding:64px 0 16px 0 ;
+            width: 140px;
+            @media screen and (min-width:$desktop) {
+                padding:50px 0;
+            }
+        }
+        .footer-list{
+            //flex-wrap:wrap;
+            list-style-type: none;
+            display: flex;
+            flex-direction:column;
+            align-content: center;
+            padding-left:0px; 
+            margin:16px auto;
+            @media screen and (min-width:$desktop) {
+                margin:16px 0 16px 83px;
+                flex-direction:row;
+            }
+            li{
+                margin-right:0px;
+                //flex:1;
+                text-align:center;
+                @media screen and (min-width:$desktop) {
+                    margin-right:45px;
+                    text-align:left;
+                }
+                &:nth-child(3,4){
+                    //flex:4;
+                }
+                > a{
+                    padding-bottom:14px;
+                    font-size:14px;
+                    display:block;
+                }
+            }
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom:24px;
+            img{
+                &:not(:first-child){
+                    margin-left:24px;
+                }
+                max-height:26px;
+                max-width: 26px;
+                &.facebook{
+                    padding:0 3px;
+                }
+            }
+        }
+    }
+    .adress-footer{
+        background-color:$primary;
+        margin-bottom:0px;
+        .row {
+            justify-content: center;
+            box-sizing: border-box;
+            padding:16px 15px;
+            @media screen and (min-width: $tablet){
+                justify-content: space-between;
+                padding:0;
+            }
+            .col-a{
+                text-align: center;
+                padding:8px 0;
+                @media screen and (min-width: $tablet){
+                    text-align: left;
+                }
+                &:first-child{
+                    p{
+                    display: flex;
+                    flex-direction: column;
+                    line-height:1.5;
+                    @media screen and (min-width: $tablet){
+                        display:block;
+                    }
+                    }
+                    hr{
+                        width:50%;
+                        text-align:center;
+                        border-color: white;
+                    }
+                }
+            }
+        }
+        p, .h6{
+        color:$white;
+        margin:0px;
+        letter-spacing: 1px;
+        }
+    }
+}

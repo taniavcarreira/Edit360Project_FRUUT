@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header> 
+        <!--PRE-HEADER-->
+        <div class="pre-header">
+            <div class="row">
+                <div class="col-a">
+                    <img src="imgs/icons/globe.svg">
+                    <span>Portes grátis</span>
+                </div>   
+                <div class="col-a"> 
+                    <img src="imgs/icons/security.svg">
+                    <span>Pagamento seguro</span>
+                </div>   
+            </div>
+        </div>
+        <!--HEADER-->
+        <div class="menu">
+            <div class="row">
+                <div class="col-a navbar">
+                    <a href="index.html" class="logo">
+                        <img src="imgs/logo.svg" alt="Fruut, the friendly snack">
+                    </a>
+                    <!--NAV-->
+                    <nav id="navbar">
+                        <ul class="list">
+                            <li><a href="https://fruut.pt/familia-fruut/" target="blank">Família Fruut</a></li>
+                            <li><a href="https://fruut.pt/" target="blank">Fruut Box</a></li>      
+                            <li><a href="manifesto.html">Manifesto</a></li>
+                            <li><a href="sobre_nos.html" class="active">Sobre</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="https://fruut.pt/contacto/" target="blank">Contacto</a></li>
+                            <li><a href="#">PT</a><a href="#">EN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--ICON RIGHT-->
+                <div class="icons col-a">
+                    <a href="#" class="flagmobile">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/minha-conta/" target="blank" class="login">
+                        <img src="imgs/icons/account.svg" alt="Fruut:a minha conta" class="imgfit">
+                    </a>
+                    <a href="https://fruut.pt/carrinho/" target="blank" class="cart">
+                        <img src="imgs/icons/cart.svg" alt="Fruut:carrinho" class="imgfit">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="imgs/icons/flag-pt.svg" alt="Idioma:português" class="imgfit">
+                    </a>
+                    <label for="main-menu-check" onclick="openMenu()">
+                        <div id="bars">
+                            <div id="bars-a"></div>
+                            <div id="bars-b"></div>
+                            <div id="bars-c"></div>
+                        </div>
+                    </label>
+                </div>                
+            </div>
+        </div>
+    </header>
+    <main id="artigo">
+        <!-- Article-->
+        <section class="row">
+            <!-- Filters aside-->
+            <aside id="blog_categories" class="col-12 col-d-3">
+                <div class="blog-container">
+                    <!-- GO BACK TO BLOG -->
+                    <a href="blog.html" class="icon">
+                        <img src="imgs/icons/arrowback.svg" alt="Regresso ao blog">
+                        <span class="btn">VOLTAR</span>
+                    </a>
+                    <!-- TABLET/DESKTOP - SEARCH -->
+                    <div class="search-container">
+                        <form action="">
+                            <input type="search" id="search" name="search" placeholder="Pesquisar">
+                            <button type="submit" onlick="search()">
+                                <img src="imgs/icons/lupa.svg" alt="search">
+                            </button>
+                        </form>
+                    </div>
+                    <!-- TABLET/DESKTOP - CATEGORY NAV -->
+                    <div id="sidenav" class="sidenav">
+                        <ul class="blog_categories">
+                            <li>
+                                <input type="checkbox" id="dicas_de_nutricao" name="dicas_de_nutricao" value="Dicas de nutrição" checked>
+                                <label for="dicas_de_nutricao" onclick>Desperdício Zero</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="receitas" name="receitas" value="receitas">
+                                <label for="receitas" onclick>De Portugal para o Mundo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dicas_zero_desperdicio" name="dicas_zero_desperdicio" value="Dicas zero desperdício" >
+                                <label for="dicas_zero_desperdicio" onclick>Receitas Fruut</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="missao_planeta" name="missao_planeta" value="Missão Planeta" >
+                                <label for="missao_planeta" onclick>Dicas de Nutrição</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="portugues_bom" name="portugues_bom" value="O que é português é bom" >
+                                <label for="portugues_bom" onclick>Cuidar do que é nosso</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- CONTENT -->
+            <div class="blog_article col-12 offset-d-1 col-d-8">
+            <!-- Title + Author -->
+                <div class="rowfull header ">
+                    <div class="col-a">
+                        <h1 class="title">Desperdício alimentar: o que é?</h1>
+                        <p class="data">15 JUN, 2021 | DESPERDÍCIO ZERO</p>
+                    </div>
+                    <!-- <div class="col-a author">
+                        <img src="imgs/artigo/foto-de-autor.png" alt="Artigo escrito por">
+                        <span> Ana Correia
+                            <br>Blogger
+                        </span>
+                    </div> -->
+                </div>
+                <!-- Image -->
+                <div class="rowfull cover">
+                    <img src="imgs/artigo/artigo.png" class="imgfit" alt="Bolo de chocolate Fruut">
+                </div>
+                <!-- Content -->
+                <div class="article rowfull nogutter is-flex-column">
+                    <div class="col-a content">
+                        <div>
+                            <p class="resume">
+                                Apesar de já terem sido efectuados muitos estudos relativamente
+                                a esta questão, ainda não existe uma abordagem clara e coerente 
+                                relativamente à definição ou quantificação do desperdício alimentar. 
+                                Eis algumas interpretações diferentes e a nossa própria opinião sobre 
+                                o assunto.
+                            </p>
+                            <p class="marginbottom_16">
+                                <strong>"Perda de alimentos":</strong> a diminuição da quantidade e da 
+                                qualidade dos produtos agrícolas, silvícolas e da pesca destinados 
+                                ao consumo humano e que, em última análise, não são consumidos pelas pessoas. 
+                                As perdas de alimentos ocorrem ao longo da cadeia de abastecimento, 
+                                da produção à colheita e ao manuseamento pós-colheita, do armazenamento 
+                                à transformação e durante o transporte (FAO, 2017)
+                            </p>
+                            <p class="marginbottom_16">
+                                <strong>"Perda e desperdício alimentar":</strong> a diminuição em todas as etapas 
+                                do sistema alimentar, desde a produção até ao consumo, da massa e/ou qualidade, 
+                                de comida originalmente destinados ao consumo humano, independentemente da 
+                                causa (FAO, 2017). Não existe, pura e simplesmente, uma definição certa ou 
+                                errada, pelo que decidimos utilizar para identificar todo este problema, 
+                                desde o campo até ao garfo, a designação de: desperdício alimentar
+                            </p>
+                            <p>
+                                <strong>"Desperdício alimentar":</strong> a comida própria para consumo humano 
+                                descartada ou deixada a deteriorar ao nível do consumidor, independentemente da causa 
+                                (HLPE, 2014)
+                            </p>
+                            <h3 class="h4">
+                                Que parte do desperdício não é comestível ou evitável?
+                            </h3>
+                            <p class="marginbottom_16">
+                                Não há uma resposta clara para esta questão. As perdas inevitáveis
+                                de comida têm origem em partes dos alimentos que não podem ser consumidas,
+                                como os ossos e a casca dos ovos ou dos ananases (Buchner et al., 2012). 
+                                No entanto, existem diferenças culturais sobre o que é comestível ou não, 
+                                e não há um consenso claro sobre que parte do desperdício alimentar provém 
+                                de alimentos comestíveis, em termos de percentagem da comida desperdiçada. 
+                                Por conseguinte, a maioria dos investigadores e dos especialistas em estatística 
+                                optam por incluir toda a comida desperdiçada (não comestível e comestível) nas
+                                suas estimativas.
+                            </p>  
+                            <p class="marginbottom_16">
+                                Na nossa opinião, todas as partes da comida (simplesmente falando: o produto 
+                                alimentar completo) requerem recursos ao longo da cadeia e cada parte pode 
+                                ter efeitos colaterais prejudiciais quando termina em aterro. Portanto, toda 
+                                a comida desperdiçada, seja comestível ou não, torna-se um problema para o 
+                                nosso planeta.
+                            </p>
+                            <h3 class="h4">
+                                Como se pode quantificar este desperdício?
+                            </h3>
+                            <p>
+                                Estamos actualmente a acumular uma enorme quantidade de resíduos! 
+                                <strong> 44 %</strong> do desperdício global consiste em comida e
+                                resíduos de jardinagem, dos quais uma parte significativa é desperdício 
+                                alimentar (Banco Mundial, 2018).
+                            </p> 
+                        </div>
+                        <!-- Author Mobile -->
+                        <div class="col-a author">
+                            <img src="imgs/artigo/foto-de-autor.png" alt="Artigo escrito por">
+                            <span> Ana Correia
+                                <br>Blogger
+                            </span>
+                        </div>
+                        <!-- Comment Manifesta-te -->
+                        <div class="col-a comment">
+                            <div class="rowfull">
+                                <!-- Coment Title -->
+                                <label>
+                                    <p class="is-bold">Manifesta-te!</p>
+                                    <p>Diz-nos o que pensas sobre este tema.</p>
+                                </label>
+                                <!-- Coment -->
+                                <form class="col-a comment-form" action="">
+                                    <input type="email" class="textarea marginbottom_24" placeholder="escreve aqui o teu e-mail">
+                                    <div class="is-relative" style="width: 100%">
+                                        <textarea class="textarea" placeholder="escreve aqui o teu comentário"></textarea>
+                                        <img src="imgs/icons/comment.svg" class="icon" alt="search">
+                                    </div>
+                                    <button type="submit" class="textright" onlick="comment()">
+                                        <a class="btn-primary">Enviar</a>
+                                    </button>
+                                </form>                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Share -->
+                    <div class="col-a share">
+                        <div class="rowfull info">
+                            <div class="author">
+                                <img src="imgs/artigo/foto-de-autor.png" alt="Artigo escrito por">
+                                <span> Anna Masiello @hero_to_0 Activista ambiental</span>
+                            </div>
+                            <button href="#" class="btn-primary btn-share">
+                                <img src="imgs/icons/share.svg" alt="partilhar">
+                                <span>Partilhar artigo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Relacionados -->
+        <section id="blog_articles" class="rowfull paddingtop_80 has-greybg">
+            <!--Title-->
+            <div class="row">
+                <h2 class="col-12 title">Blogs Relacionados</h2>
+                <!--Article1-->
+                <a class="col-12 col-t-6 col-d-4">
+                    <div class="article">
+                        <figure>
+                            <img src="imgs/blog/artigo1.png" loading="lazy" 
+                            alt="Fruut Cuidar do que é nosso" 
+                            class="imgfit">
+                        </figure>
+                        <div class="text">
+                            <h2 class="h4">
+                                Sustentabilidade: como fazer uma horta em casa                           
+                            </h2>
+                            <p class="data">
+                                <span class="data">5 JUL, 2021</span>
+                                <span class="category">CUIDAR DO QUE É NOSSO</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!--Article2-->
+                <a class="col-12 col-t-6 col-d-4">
+                    <div class="article">
+                        <figure>
+                        <img src="imgs/blog/artigo5.png" loading="lazy" 
+                        alt="Sustentabilidade: como fazer uma horta em casa" 
+                        class="imgfit">
+                    </figure>
+                    <div class="text">
+                        <h2 class="h4">
+                            Como reaproveitares os alimentos esquecidos na despensa
+                        </h2>
+                        <p class="data">
+                            <span class="data">24 MAI, 2021</span>
+                            <span class="category">RECEITAS FRUUT</span>
+                        </p>
+                    </div>
+                    </div>
+                </a>
+                <!--Article3-->
+                <a class="col-12 col-t-6 col-d-4">
+                    <div class="article">
+                        <figure>
+                            <img src="imgs/blog/artigo6.png" loading="lazy" 
+                            alt="Como reduzires a tua pegada ecológica" 
+                            class="imgfit">
+                        </figure>
+                        <div class="text">
+                            <h2 class="h4">
+                                Como reduzires a tua pegada ecológica
+                            </h2>
+                            <p class="data">
+                                <span class="data">13 MAI, 2021</span>
+                                <span class="category">CUIDAR DO QUE É NOSSO</span>
+                            </p>
+                        </div>     
+                    </div>
+                </a> 
+            </div>    
+        </section>
+        <!-- Newsletter -- REVER COM UX-->
+        <section id="newsletter" class="rowfull">
+            <div class="row nogutter">
+                <form action="#" class="col-12 col-t-12 offset-d-1 col-d-5 flex-container">
+                    <h2>Uma Newsletter por um mundo mais friendly!</h2>
+                    <p>
+                        Queremos partilhar contigo dicas de sustentabilidade, 
+                        receitas mais saudáveis e iniciativas que 
+                        marcam a diferença. Junta-te a nós!
+                    </p>
+                    <input type="email" class="email" name="email" placeholder="email@exemplo.com">
+                    <p class="rgpd">
+                        <span class="radio"><input type="checkbox" name="rgpd" id="rgbd"></span>
+                        <span> Aceito a Política de Privacidade.*</span>
+                    </p>
+                    <button class="btn-secondary" type="submit" value="Submit">Subscrever</button>
+                </form>
+            </div>
+        </section>     
+    </main>
+    <footer>
+        <!-- Footer-Top -->
+        <div class="footer row nogutter ">
+            <a href="/index.html" class="col-a">
+                <img src="imgs/logo.svg" alt="Fruut the friendly snack" class="logo">
+            </a>
+            <div class="col-a">
+                <ul class="rowfull footer-list">
+                    <li class="col-a">
+                        <a href="https://fruut.pt/box-de-subscricao/" class="h6">Fruut Box</a>
+                        <a href="/sobre_nos.html" class="h6">Sobre a Fruut®</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="/blog.html" class="h6">Blog</a>
+                        <a href="https://fruut.pt/contacto/" class="h6">Contactos</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/faq/" class="h6">FAQ</a>
+                        <a href="https://fruut.pt/politica-privacidade/" class="h6">Política de Privacidade</a>
+                    </li>
+                    <li class="col-a">
+                        <a href="https://fruut.pt/termos-e-condicoes/" class="h6">Termos e Condições</a>
+                        <a href="https://www.livroreclamacoes.pt/entrar" class="h6">Livro de Reclamações Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col social-media">
+                <figure class="social">
+                    <img src="imgs/icons/facebook.svg" alt="Facebook Fruut" class="facebook imgfit">
+                    <img src="imgs/icons/instagram.svg" alt="Instagram Fruut" class="instagram imgfit">
+                    <img src="imgs/icons/youtube.svg" alt="Youtube Fruut" class="youtube imgfit">
+                </figure>
+            </div>
+        </div>
+        <!-- Footer-bottom -->
+        <div class="adress-footer">
+            <div class="row nogutter">
+                <div class="col-a">
+                    <p class="is-medium">Fala Connosco: 
+                    <span class="h6">+351 226 155 189&ensp;|&ensp;+351 961 493 092&ensp;|&ensp;frueat@frueat.pt&ensp;&ensp;</span></p>
+                </div>
+                <div class="col-a copywrite">
+                    <p class="is-medium">made with heart by: 
+                    <span class="h6">weboost.pt</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

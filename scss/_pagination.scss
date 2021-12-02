@@ -1,0 +1,39 @@
+//@blog
+
+.pagination{
+    justify-content: space-around; 
+    @media screen and (min-width:$tablet){
+    justify-content: space-between; 
+    }
+    margin-top:36px;
+    margin-bottom:120px;
+    >button{
+        color:$primary; 
+        font-weight:$medium;
+        text-transform: capitalize;
+        &:first-child::before{
+            content:"<< "
+        }
+        &:last-child::after{
+            content:" >>"
+        }
+    }
+    .pages{
+        display:none;
+        @media screen and (min-width:$tablet){
+            display:block;
+
+        }
+        button{
+            color:$grey;
+            font-size:1rem;
+            font-weight:$medium;
+            margin-right:10px;
+            min-width:18px;
+            &.active, &:hover{
+                color:$primary; 
+                border-bottom:2px solid $primary;
+            }
+        }
+    }
+}
